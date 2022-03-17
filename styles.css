@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+
+:root {
+  --body-height: calc(100vh - 66px);
+  --font-size-xxxl: 40px;
+  --font-size-xxl: 30px;
+  --font-size-xl: 24px;
+  --font-size-l: 20px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --space-xxxl: 80px;
+  --space-xxl: 60px;
+  --space-xl: 40px;
+  --space-l: 30px;
+  --space-m: 20px;
+  --space-s: 14px;
+  --space-xs: 10px;
+  --space-xxs: 6px;
+  --space-xxxs: 4px;
+  --bg-blue: #33343d;
+  --bg-blue-light: #565656;
+  --green: #30bd03;
+  --body-text-color: #e8e8e3;
+  --grey-darkest: #232323;
+  --grey-darker: #666666;
+  --grey-dark: #888888;
+  --grey: #aaaaaa;
+  --grey-light: #b3b3b1;
+  --grey-lighter: #dedada;
+  --grey-lightest: #ededed;
+  --box-shadow: 0 8px 20px rgba(255,255,255,0.32);
+  --box-shadow-dark: 0 8px 12px rgba(0,0,0,0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+  background: linear-gradient(12deg, rgb(107, 107, 107) 0%, rgb(167, 167, 167) 52%, rgba(78,77,77,1) 100%);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh black;
+}
+
+body {
+  min-height: 100vh;
+  font-size: var(--font-size-m);
+  font-family: 'Inter', sans-serif;
+  color: var(--body-text-color);
+  background: rgb(129,129,129);
+  background: radial-gradient(circle, rgb(59, 59, 59) 0%, rgb(37, 37, 37) 28%, rgba(2,0,36,1) 100%);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  margin: 0;
+  -webkit-animation: AnimationName 20s ease infinite;
+  -moz-animation: AnimationName 20s ease infinite;
+  animation: AnimationName 20s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 72%}
+  50%{background-position:100% 29%}
+  100%{background-position:0% 72%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 72%}
+  50%{background-position:100% 29%}
+  100%{background-position:0% 72%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 72%}
+  50%{background-position:100% 29%}
+  100%{background-position:0% 72%}
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button {
+  color: var(--bg-blue);
+  border: 1px solid var(--grey-lightest);
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+}
+
+h3,
+h4,
+h5 {
+  margin: var(--space-xxs) 0;
+}
+
+p {
+  margin: var(--space-xxxs) 0;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
